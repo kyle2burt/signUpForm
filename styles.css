@@ -1,5 +1,64 @@
+@font-face {
+    font-family: "luminova";
+    src: url("/assets/luminova-font/Luminova-lgDWe.otf");
+}
+:root {
+    --offwhite: #F0ECE5;
+    --black: #000000;
+    --dark1: #111111;
+    --dark2: #232323;
+    --dark3: #343434;
+    --dark4: #464646;
+    --light1: #7a7a7a;
+    --light2: #696969;
+    --light3: #575757;
+}
 body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+.page-left {
+    background-color: var(--black);
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    top: 25%;
+    padding: 5px;
+}
+.text-backdrop h1 {
+    font-family: "luminova", "Roboto", sans-serif;
+    font-size: 56px;
+    color: white;
+    margin: 0;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--offwhite);
+    background-color: rgba(0,0,0,.3);
+    font-size: smaller;
+}
+footer a {
+    color: inherit;
+}
+.page-right {
+    flex: 2;
+    padding: 30px;
+    color: var(--offwhite);
+    background-color: var(--dark3);
 }
